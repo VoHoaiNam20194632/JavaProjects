@@ -28,14 +28,14 @@ public class CreateProductTest extends BaseTest {
         productListPage.navigateToProductsPage(getBaseUrl());
     }
 
-    @Test(description = "Create a POD product with random product type",
+    @Test(description = "Create a POD product with random product base",
             dataProvider = "singleRandomProduct", dataProviderClass = ProductDataProvider.class)
     @FrameworkAnnotation(category = {CategoryType.REGRESSION},
             author = "Framework", description = "Create a POD product end-to-end")
     @Severity(SeverityLevel.CRITICAL)
     @Story("Create POD Product")
     public void testCreatePODProduct(ProductType productType) {
-        log.info("Creating POD product with type: {}", productType.getName());
+        log.info("Creating POD product with base: {}", productType.getName());
 
         // Step 1: Click Create POD product → Design Editor
         DesignEditorPage designEditor = productListPage.clickCreatePODProduct();

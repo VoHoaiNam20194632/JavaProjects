@@ -6,10 +6,16 @@ import com.automation.utils.WaitUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
+import java.util.Collections;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public abstract class BasePage {
 
@@ -90,5 +96,75 @@ public abstract class BasePage {
     protected void uploadFile(By fileInput, String absolutePath) {
         log.info("Uploading file: {}", absolutePath);
         getDriver().findElement(fileInput).sendKeys(absolutePath);
+    }
+
+    // === Helper methods for buyer pages ===
+
+    private static final Map<Long, Map<String, String>> CONTEXT_DATA = new ConcurrentHashMap<>();
+
+    protected void clickJs(By locator) {
+        log.info("JS clicking on: {}", locator);
+        WebElement element = waitAndFind(locator, WaitStrategy.PRESENCE);
+        ((JavascriptExecutor) getDriver()).executeScript("arguments[0].click();", element);
+    }
+
+    protected void selectByVisibleText(By locator, String text) {
+        log.info("Selecting '{}' from dropdown: {}", text, locator);
+        WebElement element = waitAndFind(locator, WaitStrategy.VISIBLE);
+        new Select(element).selectByVisibleText(text);
+    }
+
+    protected List<WebElement> getElements(By locator) {
+        try {
+            return getDriver().findElements(locator);
+        } catch (Exception e) {
+            return Collections.emptyList();
+        }
+    }
+
+    protected boolean isElementDisplayed(By locator, int timeoutSeconds) {
+        return WaitUtils.isElementDisplayed(locator, timeoutSeconds);
+    }
+
+    protected void scrollToElement(By locator) {
+        log.info("Scrolling to: {}", locator);
+        WebElement element = waitAndFind(locator, WaitStrategy.PRESENCE);
+        ((JavascriptExecutor) getDriver()).executeScript("arguments[0].scrollIntoView({block: 'center'});", element);
+    }
+
+    protected void waitForUrlContains(String urlPart, int timeoutSeconds) {
+        WaitUtils.waitForUrlContains(urlPart, timeoutSeconds);
+    }
+
+    protected void typeAndEnter(By locator, String text) {
+        log.info("Typing '{}' and pressing Enter into: {}", text, locator);
+        WebElement element = waitAndFind(locator, WaitStrategy.VISIBLE);
+        element.clear();
+        element.sendKeys(text);
+        element.sendKeys(Keys.ENTER);
+    }
+
+    protected String getAttribute(By locator, String attribute) {
+        return waitAndFind(locator, WaitStrategy.VISIBLE).getAttribute(attribute);
+    }
+
+    protected String getAttribute(By locator, String attribute, WaitStrategy strategy) {
+        return waitAndFind(locator, strategy).getAttribute(attribute);
+    }
+
+    protected void setData(String key, String value) {
+        long threadId = Thread.currentThread().threadId();
+        CONTEXT_DATA.computeIfAbsent(threadId, k -> new ConcurrentHashMap<>()).put(key, value);
+    }
+
+    protected String getData(String key) {
+        long threadId = Thread.currentThread().threadId();
+        Map<String, String> data = CONTEXT_DATA.get(threadId);
+        return data != null ? data.get(key) : null;
+    }
+
+    protected void clearContextData() {
+        long threadId = Thread.currentThread().threadId();
+        CONTEXT_DATA.remove(threadId);
     }
 }

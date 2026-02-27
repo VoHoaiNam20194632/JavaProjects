@@ -70,4 +70,8 @@ public interface FrameworkConfig extends Config {
 
     @Key("store.name")
     String storeName();
+
+    @DefaultValue("")
+    @Key("buyer.url")
+    String buyerUrl();
 }

@@ -12,6 +12,7 @@
             <class name="com.automation.ui.LoginTest"/>
             <class name="com.automation.ui.HomePageTest"/>
             <class name="com.automation.ui.DashboardTest"/>
+            <class name="com.automation.ui.checkout.CheckoutTest"/>
         </classes>
     </test>
 
