@@ -1,13 +1,13 @@
 bot:
   telegram:
-    token: ${BOT_TOKEN:your-bot-token-here}
-    username: your_bot_name
+    token: 8686433338:AAG5fMj7tevDy2MRQO3IT2jcIBsV8pFUA8w
+    username: nam_automation_bot
     allowed-chat-ids:
       - 123456789
 
   runner:
     framework-path: D:/JavaProjects/automation-framework
-    maven-home: D:/Tools/apache-maven-3.9.9
+    maven-home: D:/Tools/apache-maven-3.9.8
     default-env: dev
     default-browser: chrome
     headless: true
