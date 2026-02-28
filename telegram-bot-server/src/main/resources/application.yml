@@ -1,0 +1,25 @@
+bot:
+  telegram:
+    token: ${BOT_TOKEN:your-bot-token-here}
+    username: your_bot_name
+    allowed-chat-ids:
+      - 123456789
+
+  runner:
+    framework-path: D:/JavaProjects/automation-framework
+    maven-home: D:/Tools/apache-maven-3.9.9
+    default-env: dev
+    default-browser: chrome
+    headless: true
+    timeout-minutes: 30
+    max-concurrent-runs: 3
+    max-queue-size: 5
+
+  allure:
+    allure-home: D:/Tools/allure-2.33.0
+    report-dir: ${bot.runner.framework-path}/allure-report
+    results-dir: ${bot.runner.framework-path}/allure-results
+    report-base-url: http://localhost:8080/allure
+
+server:
+  port: 8080
