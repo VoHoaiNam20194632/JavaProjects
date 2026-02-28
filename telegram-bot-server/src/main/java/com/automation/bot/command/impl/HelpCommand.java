@@ -3,7 +3,6 @@ package com.automation.bot.command.impl;
 import com.automation.bot.bot.BotMessageSender;
 import com.automation.bot.command.BotCommand;
 import com.automation.bot.command.CommandRegistry;
-import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.objects.message.Message;
@@ -22,12 +21,15 @@ import java.util.StringJoiner;
  * → Đây là pattern chuẩn Spring cho circular reference có chủ đích.
  */
 @Component
-@RequiredArgsConstructor
 public class HelpCommand implements BotCommand {
 
     private final BotMessageSender messageSender;
-    @Lazy
     private final CommandRegistry commandRegistry;
+
+    public HelpCommand(BotMessageSender messageSender, @Lazy CommandRegistry commandRegistry) {
+        this.messageSender = messageSender;
+        this.commandRegistry = commandRegistry;
+    }
 
     @Override
     public String name() {

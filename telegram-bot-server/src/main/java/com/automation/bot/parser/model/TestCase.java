@@ -1,5 +1,6 @@
 package com.automation.bot.parser.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import lombok.Getter;
 import lombok.Setter;
@@ -14,6 +15,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class TestCase {
 
     @JacksonXmlProperty(isAttribute = true)
@@ -52,6 +54,7 @@ public class TestCase {
 
     @Getter
     @Setter
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Failure {
         @JacksonXmlProperty(isAttribute = true)
         private String message;

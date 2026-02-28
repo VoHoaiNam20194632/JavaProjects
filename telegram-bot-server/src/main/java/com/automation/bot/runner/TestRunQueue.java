@@ -37,7 +37,7 @@ public class TestRunQueue {
     @Getter
     public static class TestRunInfo {
         private final TestRunRequest request;
-        private final Future<?> future;
+        private volatile Future<?> future;
         private volatile RunStatus status;
         private volatile Process process;
 
@@ -45,6 +45,10 @@ public class TestRunQueue {
             this.request = request;
             this.future = future;
             this.status = RunStatus.QUEUED;
+        }
+
+        public void setFuture(Future<?> future) {
+            this.future = future;
         }
 
         public void setStatus(RunStatus status) {
@@ -80,16 +84,23 @@ public class TestRunQueue {
      */
     public TestRunInfo submit(TestRunRequest request, Consumer<TestRunInfo> callback) {
         try {
+            TestRunInfo info = new TestRunInfo(request, null);
+            activeRuns.put(request.getRunId(), info);
+
             Future<?> future = executor.submit(() -> {
-                callback.accept(activeRuns.get(request.getRunId()));
+                try {
+                    callback.accept(info);
+                } catch (Exception e) {
+                    log.error("[{}] Error in test run callback: {}", request.getRunId(), e.getMessage(), e);
+                }
             });
 
-            TestRunInfo info = new TestRunInfo(request, future);
-            activeRuns.put(request.getRunId(), info);
+            info.setFuture(future);
             log.info("[{}] Test run submitted to queue", request.getRunId());
             return info;
 
         } catch (RejectedExecutionException e) {
+            activeRuns.remove(request.getRunId());
             log.warn("[{}] Queue is full, rejecting request", request.getRunId());
             return null;
         }
