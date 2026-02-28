@@ -1,0 +1,19 @@
+### IntelliJ IDEA ###
+.idea/
+*.iml
+*.iws
+*.ipr
+
+### Build ###
+target/
+
+### Environment secrets ###
+.env
+.env.*
+
+### OS ###
+.DS_Store
+Thumbs.db
+
+### Logs ###
+*.log
