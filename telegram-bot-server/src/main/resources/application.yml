@@ -18,8 +18,12 @@ bot:
   allure:
     allure-home: D:/Tools/allure-2.33.0
     report-dir: ${bot.runner.framework-path}/allure-report
-    results-dir: ${bot.runner.framework-path}/allure-results
-    report-base-url: http://localhost:8080/allure
+    results-dir: ${bot.runner.framework-path}/target/allure-results
+    report-base-url: https://VoHoaiNam20194632.github.io/JavaProjects/
+    github-pages:
+      enabled: true
+      repo-path: D:/JavaProjects
+      base-url: https://VoHoaiNam20194632.github.io/JavaProjects/
 
 server:
   port: 8080

@@ -23,6 +23,7 @@ import java.util.concurrent.TimeUnit;
 public class AllureReportGenerator {
 
     private final AllureProperties allureProperties;
+    private final GitHubPagesPublisher gitHubPagesPublisher;
 
     /**
      * Chạy: allure generate allure-results -o allure-report --clean
@@ -65,7 +66,16 @@ public class AllureReportGenerator {
                 return null;
             }
 
-            String reportUrl = allureProperties.getReportBaseUrl();
+            // Publish lên GitHub Pages (nếu enabled)
+            boolean published = gitHubPagesPublisher.publish();
+
+            String reportUrl;
+            if (published && allureProperties.getGithubPages().isEnabled()) {
+                reportUrl = allureProperties.getGithubPages().getBaseUrl();
+            } else {
+                reportUrl = allureProperties.getReportBaseUrl();
+            }
+
             log.info("Allure report generated: {}", reportUrl);
             return reportUrl;
 

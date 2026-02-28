@@ -15,4 +15,14 @@ public class AllureProperties {
     private String reportDir;
     private String resultsDir;
     private String reportBaseUrl;
+
+    private GithubPages githubPages = new GithubPages();
+
+    @Getter
+    @Setter
+    public static class GithubPages {
+        private boolean enabled = false;
+        private String repoPath;
+        private String baseUrl;
+    }
 }
