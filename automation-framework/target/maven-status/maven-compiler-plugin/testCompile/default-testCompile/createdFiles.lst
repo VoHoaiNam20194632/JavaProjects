@@ -1,0 +1,13 @@
+com\automation\dataproviders\ProductDataProvider.class
+com\automation\dataproviders\UserDataProvider.class
+com\automation\dataproviders\CheckoutDataProvider.class
+com\automation\ui\checkout\CheckoutTest.class
+com\automation\ui\product\CreateProductTest.class
+com\automation\api\UserApiTest.class
+com\automation\base\BaseTest.class
+com\automation\dataproviders\LoginDataProvider.class
+com\automation\base\BaseApiTest.class
+com\automation\ui\DashboardTest.class
+com\automation\api\AuthApiTest.class
+com\automation\ui\LoginTest.class
+com\automation\ui\HomePageTest.class

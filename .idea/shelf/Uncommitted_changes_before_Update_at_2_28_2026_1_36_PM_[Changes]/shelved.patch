@@ -1,0 +1,19 @@
+Index: telegram-bot-server/src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>bot:\r\n  telegram:\r\n    token: 8686433338:AAG5fMj7tevDy2MRQO3IT2jcIBsV8pFUA8w\r\n    username: nam_automation_bot\r\n    allowed-chat-ids:\r\n      - 123456789\r\n\r\n  runner:\r\n    framework-path: D:/JavaProjects/automation-framework\r\n    maven-home: D:/Tools/apache-maven-3.9.8\r\n    default-env: dev\r\n    default-browser: chrome\r\n    headless: true\r\n    timeout-minutes: 30\r\n    max-concurrent-runs: 3\r\n    max-queue-size: 5\r\n\r\n  allure:\r\n    allure-home: D:/Tools/allure-2.33.0\r\n    report-dir: ${bot.runner.framework-path}/allure-report\r\n    results-dir: ${bot.runner.framework-path}/allure-results\r\n    report-base-url: http://localhost:8080/allure\r\n\r\nserver:\r\n  port: 8080\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/telegram-bot-server/src/main/resources/application.yml b/telegram-bot-server/src/main/resources/application.yml
+--- a/telegram-bot-server/src/main/resources/application.yml	(revision c18cb13ff4ff457f98497195bdb07e7f0faa7f26)
++++ b/telegram-bot-server/src/main/resources/application.yml	(date 1772260553532)
+@@ -3,7 +3,7 @@
+     token: 8686433338:AAG5fMj7tevDy2MRQO3IT2jcIBsV8pFUA8w
+     username: nam_automation_bot
+     allowed-chat-ids:
+-      - 123456789
++      - 6169627315
+ 
+   runner:
+     framework-path: D:/JavaProjects/automation-framework

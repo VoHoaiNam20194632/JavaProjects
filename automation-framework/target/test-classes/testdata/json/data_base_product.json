@@ -1,0 +1,82 @@
+[
+  {
+    "S_NAME": "Accent Mug 15oz (US)",
+    "S_SHORT_CODE": "USAAM15"
+  },
+  {
+    "S_NAME": "Unisex Tank Top | Gildan 2200 (US)",
+    "S_SHORT_CODE": "USG2200"
+  },
+  {
+    "S_NAME": "Unisex Crewneck Sweatshirt | Gildan 18000 (US)",
+    "S_SHORT_CODE": "USG18000"
+  },
+  {
+    "S_NAME": "Kid\u0027s T-Shirt | Gildan 5000B (US)",
+    "S_SHORT_CODE": "USG5000B"
+  },
+  {
+    "S_NAME": "Unisex V-Neck T-shirt | Bella + Canvas 3005 (US)",
+    "S_SHORT_CODE": "USBC3005"
+  },
+  {
+    "S_NAME": "Unisex Long Sleeve | Gildan 2400 (US)",
+    "S_SHORT_CODE": "USG2400"
+  },
+  {
+    "S_NAME": "Magic Mug 15oz (US)",
+    "S_SHORT_CODE": "USGAMM15"
+  },
+  {
+    "S_NAME": "30oz Tumbler With Straw",
+    "S_SHORT_CODE": "ACC30TS"
+  },
+  {
+    "S_NAME": "Ceramic Mug 11oz (US)",
+    "S_SHORT_CODE": "USACM11"
+  },
+  {
+    "S_NAME": "Kid\u0027s Hoodie | G18500B (US)",
+    "S_SHORT_CODE": "USG18500B"
+  },
+  {
+    "S_NAME": "Magic Mug 11oz (US)",
+    "S_SHORT_CODE": "USGAMM11"
+  },
+  {
+    "S_NAME": "Unisex T-Shirt | Next Level 3600 (US)",
+    "S_SHORT_CODE": "USNL3600"
+  },
+  {
+    "S_NAME": "AOP Kid\u0027s Sweatshirt (EU)",
+    "S_SHORT_CODE": "EUAPKS"
+  },
+  {
+    "S_NAME": "Unisex T-Shirt | Bella + Canvas 3001 (US)",
+    "S_SHORT_CODE": "USBC3001"
+  },
+  {
+    "S_NAME": "Kid\u0027s Hoodie | Gildan 18500B (US)",
+    "S_SHORT_CODE": "USG18500B"
+  },
+  {
+    "S_NAME": "AOP Kid\u0027s Sweatshirt",
+    "S_SHORT_CODE": "APKSS"
+  },
+  {
+    "S_NAME": "Unisex Hoodie | Gildan 18500 (US)",
+    "S_SHORT_CODE": "USG18500"
+  },
+  {
+    "S_NAME": "Ceramic Mug 15oz (US)",
+    "S_SHORT_CODE": "USACM15"
+  },
+  {
+    "S_NAME": "Unisex Tank Top | Bella + Canvas 3480 (US)",
+    "S_SHORT_CODE": "USNC3480"
+  },
+  {
+    "S_NAME": "Unisex T-Shirt | Gildan 5000",
+    "S_SHORT_CODE": "USG5000"
+  }
+]

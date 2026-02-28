@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API Test Suite" verbose="1">
+    <listeners>
+        <listener class-name="com.automation.listeners.TestListener"/>
+        <listener class-name="com.automation.listeners.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="API Tests">
+        <classes>
+            <class name="com.automation.api.AuthApiTest"/>
+            <class name="com.automation.api.UserApiTest"/>
+        </classes>
+    </test>
+</suite>

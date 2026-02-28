@@ -1,0 +1,80 @@
+2026-02-28 14:07:25.203 [main] INFO  com.automation.base.BaseTest - Setting up WebDriver for thread: 1
+2026-02-28 14:07:25.244 [main] INFO  com.automation.driver.DriverFactory - Creating CHROME driver (headless: true)
+2026-02-28 14:07:27.066 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-28 14:07:27.135 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\vohoa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-28 14:07:29.056 [main] INFO  com.automation.pages.LoginPage - Navigating to: https://admin-dev.burgershop.io
+2026-02-28 14:07:31.630 [main] INFO  com.automation.base.BaseTest - Tearing down WebDriver for thread: 1
+2026-02-28 14:07:31.807 [main] INFO  com.automation.base.BaseTest - Setting up WebDriver for thread: 1
+2026-02-28 14:07:31.808 [main] INFO  com.automation.driver.DriverFactory - Creating CHROME driver (headless: true)
+2026-02-28 14:07:31.818 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-28 14:07:31.839 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\vohoa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-28 14:07:32.614 [main] INFO  com.automation.pages.LoginPage - Navigating to: https://admin-dev.burgershop.io
+2026-02-28 14:07:33.685 [main] INFO  com.automation.pages.LoginPage - Typing 'namvh@leadsgen.asia' into: By.cssSelector: input[type='email'], input[formcontrolname='email'], input[placeholder*='email' i]
+2026-02-28 14:07:34.235 [main] INFO  com.automation.pages.LoginPage - Clicking on: By.xpath: //button[normalize-space()='Login' or normalize-space()='Log in' or normalize-space()='LOG IN']
+2026-02-28 14:07:34.324 [main] INFO  com.automation.pages.LoginPage - Typing '2408122001Nam@' into: By.cssSelector: input[type='password'], input[formcontrolname='password'], input[placeholder*='password' i]
+2026-02-28 14:07:35.474 [main] INFO  com.automation.pages.LoginPage - Clicking on: By.xpath: //button[normalize-space()='Continue' or normalize-space()='CONTINUE']
+2026-02-28 14:07:47.567 [main] INFO  com.automation.base.BaseTest - Tearing down WebDriver for thread: 1
+2026-02-28 14:12:14.311 [main] INFO  com.automation.base.BaseTest - Setting up WebDriver for thread: 1
+2026-02-28 14:12:14.345 [main] INFO  com.automation.driver.DriverFactory - Creating CHROME driver (headless: true)
+2026-02-28 14:12:14.760 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-28 14:12:14.799 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\vohoa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-28 14:12:16.461 [main] INFO  com.automation.pages.LoginPage - Navigating to: https://admin-dev.burgershop.io
+2026-02-28 14:12:22.219 [main] INFO  com.automation.base.BaseTest - Tearing down WebDriver for thread: 1
+2026-02-28 14:12:22.350 [main] INFO  com.automation.base.BaseTest - Setting up WebDriver for thread: 1
+2026-02-28 14:12:22.351 [main] INFO  com.automation.driver.DriverFactory - Creating CHROME driver (headless: true)
+2026-02-28 14:12:22.360 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-28 14:12:22.376 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\vohoa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-28 14:12:23.074 [main] INFO  com.automation.pages.LoginPage - Navigating to: https://admin-dev.burgershop.io
+2026-02-28 14:12:25.847 [main] INFO  com.automation.pages.LoginPage - Typing 'namvh@leadsgen.asia' into: By.cssSelector: input[type='email'], input[formcontrolname='email'], input[placeholder*='email' i]
+2026-02-28 14:12:27.279 [main] INFO  com.automation.pages.LoginPage - Clicking on: By.xpath: //button[normalize-space()='Login' or normalize-space()='Log in' or normalize-space()='LOG IN']
+2026-02-28 14:12:27.381 [main] INFO  com.automation.pages.LoginPage - Typing '2408122001Nam@' into: By.cssSelector: input[type='password'], input[formcontrolname='password'], input[placeholder*='password' i]
+2026-02-28 14:12:29.591 [main] INFO  com.automation.pages.LoginPage - Clicking on: By.xpath: //button[normalize-space()='Continue' or normalize-space()='CONTINUE']
+2026-02-28 14:12:42.083 [main] INFO  com.automation.base.BaseTest - Tearing down WebDriver for thread: 1
+2026-02-28 14:18:53.515 [main] INFO  com.automation.base.BaseTest - Setting up WebDriver for thread: 1
+2026-02-28 14:18:53.549 [main] INFO  com.automation.driver.DriverFactory - Creating CHROME driver (headless: true)
+2026-02-28 14:18:53.988 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-28 14:18:54.035 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\vohoa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-28 14:18:55.712 [main] INFO  com.automation.pages.LoginPage - Navigating to: https://admin-dev.burgershop.io
+2026-02-28 14:19:05.047 [main] INFO  com.automation.base.BaseTest - Tearing down WebDriver for thread: 1
+2026-02-28 14:19:05.198 [main] INFO  com.automation.base.BaseTest - Setting up WebDriver for thread: 1
+2026-02-28 14:19:05.198 [main] INFO  com.automation.driver.DriverFactory - Creating CHROME driver (headless: true)
+2026-02-28 14:19:05.208 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-28 14:19:05.226 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\vohoa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-28 14:19:05.968 [main] INFO  com.automation.pages.LoginPage - Navigating to: https://admin-dev.burgershop.io
+2026-02-28 14:19:10.088 [main] INFO  com.automation.pages.LoginPage - Typing 'namvh@leadsgen.asia' into: By.cssSelector: input[type='email'], input[formcontrolname='email'], input[placeholder*='email' i]
+2026-02-28 14:19:11.349 [main] INFO  com.automation.pages.LoginPage - Clicking on: By.xpath: //button[normalize-space()='Login' or normalize-space()='Log in' or normalize-space()='LOG IN']
+2026-02-28 14:19:11.464 [main] INFO  com.automation.pages.LoginPage - Typing '2408122001Nam@' into: By.cssSelector: input[type='password'], input[formcontrolname='password'], input[placeholder*='password' i]
+2026-02-28 14:19:12.253 [main] INFO  com.automation.pages.LoginPage - Clicking on: By.xpath: //button[normalize-space()='Continue' or normalize-space()='CONTINUE']
+2026-02-28 14:19:25.713 [main] INFO  com.automation.base.BaseTest - Tearing down WebDriver for thread: 1
+2026-02-28 14:21:35.575 [main] INFO  com.automation.base.BaseTest - Setting up WebDriver for thread: 1
+2026-02-28 14:21:35.650 [main] INFO  com.automation.driver.DriverFactory - Creating CHROME driver (headless: true)
+2026-02-28 14:21:36.096 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-28 14:21:36.141 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\vohoa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-28 14:21:37.950 [main] INFO  com.automation.pages.LoginPage - Navigating to: https://admin-dev.burgershop.io
+2026-02-28 14:21:42.867 [main] INFO  com.automation.base.BaseTest - Tearing down WebDriver for thread: 1
+2026-02-28 14:21:43.112 [main] INFO  com.automation.base.BaseTest - Setting up WebDriver for thread: 1
+2026-02-28 14:21:43.113 [main] INFO  com.automation.driver.DriverFactory - Creating CHROME driver (headless: true)
+2026-02-28 14:21:43.124 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-28 14:21:43.143 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\vohoa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-28 14:21:43.873 [main] INFO  com.automation.pages.LoginPage - Navigating to: https://admin-dev.burgershop.io
+2026-02-28 14:21:44.898 [main] INFO  com.automation.pages.LoginPage - Typing 'namvh@leadsgen.asia' into: By.cssSelector: input[type='email'], input[formcontrolname='email'], input[placeholder*='email' i]
+2026-02-28 14:21:46.048 [main] INFO  com.automation.pages.LoginPage - Clicking on: By.xpath: //button[normalize-space()='Login' or normalize-space()='Log in' or normalize-space()='LOG IN']
+2026-02-28 14:21:46.173 [main] INFO  com.automation.pages.LoginPage - Typing '2408122001Nam@' into: By.cssSelector: input[type='password'], input[formcontrolname='password'], input[placeholder*='password' i]
+2026-02-28 14:21:46.882 [main] INFO  com.automation.pages.LoginPage - Clicking on: By.xpath: //button[normalize-space()='Continue' or normalize-space()='CONTINUE']
+2026-02-28 14:21:58.409 [main] INFO  com.automation.base.BaseTest - Tearing down WebDriver for thread: 1
+2026-02-28 14:31:47.872 [main] INFO  com.automation.base.BaseTest - Setting up WebDriver for thread: 1
+2026-02-28 14:31:47.905 [main] INFO  com.automation.driver.DriverFactory - Creating CHROME driver (headless: true)
+2026-02-28 14:31:48.322 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-28 14:31:48.364 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\vohoa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-28 14:31:49.895 [main] INFO  com.automation.pages.LoginPage - Navigating to: https://admin-dev.burgershop.io
+2026-02-28 14:31:56.066 [main] INFO  com.automation.base.BaseTest - Tearing down WebDriver for thread: 1
+2026-02-28 14:31:56.212 [main] INFO  com.automation.base.BaseTest - Setting up WebDriver for thread: 1
+2026-02-28 14:31:56.213 [main] INFO  com.automation.driver.DriverFactory - Creating CHROME driver (headless: true)
+2026-02-28 14:31:56.230 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-02-28 14:31:56.250 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\vohoa\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-02-28 14:31:57.048 [main] INFO  com.automation.pages.LoginPage - Navigating to: https://admin-dev.burgershop.io
+2026-02-28 14:31:59.959 [main] INFO  com.automation.pages.LoginPage - Typing 'namvh@leadsgen.asia' into: By.cssSelector: input[type='email'], input[formcontrolname='email'], input[placeholder*='email' i]
+2026-02-28 14:32:00.812 [main] INFO  com.automation.pages.LoginPage - Clicking on: By.xpath: //button[normalize-space()='Login' or normalize-space()='Log in' or normalize-space()='LOG IN']
+2026-02-28 14:32:00.955 [main] INFO  com.automation.pages.LoginPage - Typing '2408122001Nam@' into: By.cssSelector: input[type='password'], input[formcontrolname='password'], input[placeholder*='password' i]
+2026-02-28 14:32:02.110 [main] INFO  com.automation.pages.LoginPage - Clicking on: By.xpath: //button[normalize-space()='Continue' or normalize-space()='CONTINUE']
+2026-02-28 14:32:13.420 [main] INFO  com.automation.base.BaseTest - Tearing down WebDriver for thread: 1

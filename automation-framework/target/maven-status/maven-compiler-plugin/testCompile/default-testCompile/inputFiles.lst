@@ -1,0 +1,13 @@
+D:\JavaProjects\automation-framework\src\test\java\com\automation\api\AuthApiTest.java
+D:\JavaProjects\automation-framework\src\test\java\com\automation\api\UserApiTest.java
+D:\JavaProjects\automation-framework\src\test\java\com\automation\base\BaseApiTest.java
+D:\JavaProjects\automation-framework\src\test\java\com\automation\base\BaseTest.java
+D:\JavaProjects\automation-framework\src\test\java\com\automation\dataproviders\CheckoutDataProvider.java
+D:\JavaProjects\automation-framework\src\test\java\com\automation\dataproviders\LoginDataProvider.java
+D:\JavaProjects\automation-framework\src\test\java\com\automation\dataproviders\ProductDataProvider.java
+D:\JavaProjects\automation-framework\src\test\java\com\automation\dataproviders\UserDataProvider.java
+D:\JavaProjects\automation-framework\src\test\java\com\automation\ui\checkout\CheckoutTest.java
+D:\JavaProjects\automation-framework\src\test\java\com\automation\ui\DashboardTest.java
+D:\JavaProjects\automation-framework\src\test\java\com\automation\ui\HomePageTest.java
+D:\JavaProjects\automation-framework\src\test\java\com\automation\ui\LoginTest.java
+D:\JavaProjects\automation-framework\src\test\java\com\automation\ui\product\CreateProductTest.java
